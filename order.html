@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อ — Honey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand-name">Honey</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <h1>สั่งซื้อ</h1>
+        <hr class="rule">
+        <p>กรอกข้อมูลด้านล่าง เราจะติดต่อกลับเพื่อยืนยันออเดอร์และแจ้งรายละเอียดการชำระเงินและจัดส่ง</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <form id="orderForm" class="form-wrap">
+          <div class="form-field">
+            <label for="customerName">ชื่อลูกค้า</label>
+            <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="contact">เบอร์โทร / Line</label>
+            <input type="text" id="contact" name="contact" autocomplete="tel" required>
+          </div>
+
+          <div class="form-field">
+            <label for="items">รายการสินค้า</label>
+            <input type="text" id="items" name="items" required>
+          </div>
+
+          <div class="form-field">
+            <label for="total">จำนวนเงินรวม</label>
+            <input type="text" id="total" name="total" required>
+          </div>
+
+          <div class="form-field">
+            <label for="note">หมายเหตุ</label>
+            <textarea id="note" name="note" rows="3"></textarea>
+            <p class="form-hint">เช่น ที่อยู่จัดส่ง หรือจำนวนที่ต้องการสั่งเพิ่ม</p>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--gold">ยืนยันสั่งซื้อ</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="brand-name">Honey</p>
+      <p>ความหวานบริสุทธิ์จากธรรมชาติที่รังสรรค์ด้วยใจ</p>
+      <p class="footer-note">&copy; 2026 Honey. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
